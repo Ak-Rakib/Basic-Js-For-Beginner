@@ -234,37 +234,76 @@
 
 // Calculate Sum of all numbers of an array
 
-function getSumOfAnArray(number) {
-    let sum = 0;
-    for (let i = 0; i < number.length; i++) {
-        const index = i;
-        const element = number[index];
-        sum = sum + element;
-        console.log(index, element, sum);
-    }
-}
+// function getSumOfAnArray(number) {
+//     let sum = 0;
+//     for (let i = 0; i < number.length; i++) {
+//         const index = i;
+//         const element = number[index];
+//         sum = sum + element;
+//         console.log(index, element, sum);
+//     }
+// }
 
 // Get Odd Numbers of an array and get odd Sum of an array
-function getOddNumbers(number) {
-    let oddNumArray = [];
-    for (var i = 0; i < number.length; i++) {
-        const index = i;
-        const element = number[index]
-        if (element % 2 !== 0) {
-            // console.log(index, element)
-            oddNumArray.push(element);
-        }
-    }
-    return oddNumArray;
-}
+// function getOddNumbers(number) {
+//     let oddNumArray = [];
+//     for (var i = 0; i < number.length; i++) {
+//         const index = i;
+//         const element = number[index]
+//         if (element % 2 !== 0) {
+//             // console.log(index, element)
+//             oddNumArray.push(element);
+//         }
+//     }
+//     return oddNumArray;
+// }
 
-const array = [6, 17, 9, 1996, 1999];
+// const array = [6, 17, 9, 1996, 1999];
 // const luckyNumber = getSumOfAnArray(array)
 // console.log(luckyNumber);
-const oddNumbers = getOddNumbers(array);
-console.log(oddNumbers)
-getSumOfAnArray(oddNumbers);
+// const oddNumbers = getOddNumbers(array);
+// console.log(oddNumbers)
+// getSumOfAnArray(oddNumbers);
 
+
+
+
+// Calculate Factorial of a number using for loop
+// Take ii out 5!
+// function getFactorialFive(factorial) {
+//     let mul = 1;
+//     for(let i=1; i<=factorial; i++){
+//          mul = mul * i;
+//     }
+//     return mul;
+// }
+// const setFactorialValue = getFactorialFive(5);
+// console.log(setFactorialValue);
+
+
+
+// Factorial using a while loop or a decrementing loop
+function decrementingFact(number){
+    let mul = 1;
+    for(let i = number; i >= 1; i--){
+        mul = mul * i;
+    }
+    return mul;
+}
+const reversWay = decrementingFact(5);
+// console.log(reversWay);
+
+function reversFact(num){
+    let mul = 1;
+    let i = num;
+    while(i >= 1){
+        mul = mul * i;
+        i--;
+    }
+    return mul;
+}
+const whileReverseFact = reversFact(5);
+console.log(whileReverseFact);
 
 
 
