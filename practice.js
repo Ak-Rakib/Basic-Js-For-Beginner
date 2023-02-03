@@ -233,18 +233,37 @@
 
 
 // Calculate Sum of all numbers of an array
-// function getSumOfAnArray(number) {
-//     let sum = 0;
-//     for (let i = 0; i < number.length; i++) {
-//         const index = i;
-//         const element = number[index];
-//         sum = sum + element;
-//         console.log(index, element, sum);
-//     }
-// }
-// const array = [6, 17, 9, 1996, 1999];
+
+function getSumOfAnArray(number) {
+    let sum = 0;
+    for (let i = 0; i < number.length; i++) {
+        const index = i;
+        const element = number[index];
+        sum = sum + element;
+        console.log(index, element, sum);
+    }
+}
+
+// Get Odd Numbers of an array and get odd Sum of an array
+function getOddNumbers(number) {
+    let oddNumArray = [];
+    for (var i = 0; i < number.length; i++) {
+        const index = i;
+        const element = number[index]
+        if (element % 2 !== 0) {
+            // console.log(index, element)
+            oddNumArray.push(element);
+        }
+    }
+    return oddNumArray;
+}
+
+const array = [6, 17, 9, 1996, 1999];
 // const luckyNumber = getSumOfAnArray(array)
 // console.log(luckyNumber);
+const oddNumbers = getOddNumbers(array);
+console.log(oddNumbers)
+getSumOfAnArray(oddNumbers);
 
 
 
