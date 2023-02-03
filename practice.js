@@ -152,6 +152,7 @@
 
 
 // Unit Convert Inch to feet
+
 // function feet(inch) {
 //     const yourFeet = inch/12;
 //     return yourFeet;
@@ -162,6 +163,7 @@
 
 
 // Unit Convert miles to kilometer
+
 // function miles(km) {
 //     const kilometer = km/1.609;
 //     return kilometer;
@@ -172,17 +174,78 @@
 
 
 // Even and odd number
-function isEven(num) {
-    if (num % 2 == 0) {
-        return true
-    } else {
-        return false;
-    }
-}
-const myEvenNumber = isEven(50)
-console.log(myEvenNumber);
-const hisEvenNumber = isEven(55);
-console.log(hisEvenNumber);
+
+// function isEven(num) {
+//     if (num % 2 == 0) {
+//         return true
+//     } else {
+//         return false;
+//     }
+// }
+// const myEvenNumber = isEven(50)
+// console.log(myEvenNumber);
+// const hisEvenNumber = isEven(55);
+// console.log(hisEvenNumber);
+
+
+
+// Leap Year
+
+// function isLeapYear(year) {
+//     if(year % 4 === 0){
+//         console.log("Your year is leap year")
+//     } else {
+//         console.log("This year is not a leap year")
+//     }
+// }
+// const myLeapYear = isLeapYear(1997);
+// console.log(myLeapYear);
+
+// function isLeapYear(year) {
+//     if(year % 4 === 0){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// const hisLeapYear = isLeapYear(1996);
+// console.log(hisLeapYear);
+
+// function isLeapYear(year) {
+//     if(year % 4 === 0){
+//         return true;
+//     } 
+//         return false;
+// }
+// const hisLeapYear = isLeapYear(1999);
+// console.log(hisLeapYear);
+
+// function isLeapYear(year) {
+//         if((year%4 === 0 && year%100 !== 0 || year%400 === 0)){
+//             console.log("Your year is leap year")
+//         } else {
+//             console.log("This year is not a leap year")
+//         }
+//     }
+//     const myLeapYear = isLeapYear(2000);
+//     console.log(myLeapYear);
+
+
+
+// Calculate Sum of all numbers of an array
+// function getSumOfAnArray(number) {
+//     let sum = 0;
+//     for (let i = 0; i < number.length; i++) {
+//         const index = i;
+//         const element = number[index];
+//         sum = sum + element;
+//         console.log(index, element, sum);
+//     }
+// }
+// const array = [6, 17, 9, 1996, 1999];
+// const luckyNumber = getSumOfAnArray(array)
+// console.log(luckyNumber);
+
 
 
 
