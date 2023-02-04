@@ -356,6 +356,25 @@
 // const elements = ["Akbar", "Hossain", "Rakib"];
 // console.log(elements.join("-"));
 
+// Math, abs, pow, round, ceil, floor, and random number
+// let number1 = 70;
+// let number2 = 120;
+// console.log(Math.abs(number1 - number2));
+
+// let fivePower = Math.pow(2,8);
+// console.log(fivePower);
+
+// let num = 4.499;
+// console.log(Math.round(num));
+
+// let num = 4.1;
+// console.log(Math.ceil(num));
+
+// let num  = 4.4;
+// console.log(Math.floor(num));
+
+// console.log(Math.random());
+
 
 
 
