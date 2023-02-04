@@ -283,27 +283,79 @@
 
 
 // Factorial using a while loop or a decrementing loop
-function decrementingFact(number){
-    let mul = 1;
-    for(let i = number; i >= 1; i--){
-        mul = mul * i;
-    }
-    return mul;
-}
-const reversWay = decrementingFact(5);
+// function decrementingFact(number){
+//     let mul = 1;
+//     for(let i = number; i >= 1; i--){
+//         mul = mul * i;
+//     }
+//     return mul;
+// }
+// const reversWay = decrementingFact(5);
 // console.log(reversWay);
 
-function reversFact(num){
-    let mul = 1;
-    let i = num;
-    while(i >= 1){
-        mul = mul * i;
-        i--;
-    }
-    return mul;
-}
-const whileReverseFact = reversFact(5);
-console.log(whileReverseFact);
+// function reversFact(num) {
+//     let mul = 1;
+//     let i = num;
+//     while (i >= 1) {
+//         mul = mul * i;
+//         i--;
+//     }
+//     return mul;
+// }
+// const whileReverseFact = reversFact(6);
+// console.log(whileReverseFact);
+
+
+
+
+// String
+
+// let bandName1 = "pinKLand";
+// let bandName2 = "pinkLand";
+// if (bandName1.toLowerCase() == bandName2.toLowerCase()) {
+//     console.log("valid entry")
+// }
+// else {
+//     console.log("Invalid entry");
+// }
+
+// const songLyrics = "Tumi akasher buke, sorolotar protima. Tumi amr bukete bishalotar upoma"
+// console.log("exist", songLyrics.includes("Tumi"));
+
+// const songLyrics = "Tumi akasher buke, sorolotar protima. Tumi amr bukete bishalotar upoma"
+// console.log("exist", songLyrics.indexOf("2mi"));
+
+// const songLyrics = "Tumi akasher buke, sorolotar protima. Tumi amr bukete bishalotar upoma"
+// console.log("exist", songLyrics.startsWith("Tumi"));
+
+// const songLyrics = "Tumi akasher buke, sorolotar protima. Tumi amr bukete bishalotar upoma"
+// console.log("exist", songLyrics.endsWith("upoma"));
+
+
+
+// split, slice, substr, substring, concat, join
+
+// const songLyrics = "Tumi akasher buke, sorolotar protima. Tumi amr bukete bishalotar upoma"
+// const applySplit = songLyrics.split('');
+// const applySplit = songLyrics.split(' ');
+// const applySplit = songLyrics.split('.');
+// console.log(applySplit);
+
+// const songLyrics = "Tumi akasher buke, sorolotar protima. Tumi amr bukete bishalotar upoma"
+// const applySlice = songLyrics.slice(4,13);
+// console.log(applySlice);
+
+// const songLyrics = "Tumi akasher buke, sorolotar protima. Tumi amr bukete bishalotar upoma"
+// const applySubstring = songLyrics.substring(4,13);
+// console.log(applySubstring);
+
+// const firstName = "Akbar Hossain";
+// const lastName = "Rakib";
+// console.log(firstName.concat(' ',lastName));
+
+// const elements = ["Akbar", "Hossain", "Rakib"];
+// console.log(elements.join("-"));
+
 
 
 
