@@ -379,16 +379,36 @@
 
 
 // Swap variable, swap without temp, destructing
-let a = 7;
-let b = 8;
-// const tem = a;
-// a = b;
-// b = tem;
+// let a = 7;
+// let b = 8;
+// // const tem = a;
+// // a = b;
+// // b = tem;
+// // console.log(a, b);
+
+// // Destructing way
+// [a, b] = [b, a];
 // console.log(a, b);
 
-// Destructing way
-[a, b] = [b, a];
-console.log(a, b);
+
+
+// Write a function that will take 3 numbers will return the max number
+function maxNumber() {
+    const maximum = Math.max(9,17,6);
+    return maximum;
+}
+const outputMaxNUm = maxNumber();
+console.log(outputMaxNUm);
+
+
+
+// Write a function that will take 3 parameters and will return the min number
+function minNumber(a,b,c) {
+    const minimumNum = Math.min(a,b,c);
+    return minimumNum;
+}
+const minimumNumber = minNumber(7,5,1);
+console.log(minimumNumber);
 
 
 
