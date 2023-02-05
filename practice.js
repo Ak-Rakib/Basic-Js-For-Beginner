@@ -378,6 +378,21 @@
 
 
 
+// Swap variable, swap without temp, destructing
+let a = 7;
+let b = 8;
+// const tem = a;
+// a = b;
+// b = tem;
+// console.log(a, b);
+
+// Destructing way
+[a, b] = [b, a];
+console.log(a, b);
+
+
+
+
 
 
 
