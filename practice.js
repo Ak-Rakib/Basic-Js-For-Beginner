@@ -393,22 +393,74 @@
 
 
 // Write a function that will take 3 numbers will return the max number
-function maxNumber() {
-    const maximum = Math.max(9,17,6);
-    return maximum;
-}
-const outputMaxNUm = maxNumber();
-console.log(outputMaxNUm);
+// function maxNumber() {
+//     const maximum = Math.max(9,17,6);
+//     return maximum;
+// }
+// const outputMaxNUm = maxNumber();
+// console.log(outputMaxNUm);
 
 
 
 // Write a function that will take 3 parameters and will return the min number
-function minNumber(a,b,c) {
-    const minimumNum = Math.min(a,b,c);
-    return minimumNum;
+// function minNumber(a,b,c) {
+//     const minimumNum = Math.min(a,b,c);
+//     return minimumNum;
+// }
+// const minimumNumber = minNumber(7,5,1);
+// console.log(minimumNumber);
+
+
+
+
+// Write a function to get the lowest number in an array
+// function lowestNumber(number) {
+//     lowest = number[0];
+//     for(var i=0; i < number.length; i++){
+//         let element = number[i];
+//         // console.log(i,element);
+//         if(element < lowest){
+//             lowest = element;
+//         }
+//     }
+//     return lowest;
+// }
+// const numberOfArray = [34, 45, 2, 5, 78];
+// const lowestArrayNumber = lowestNumber(numberOfArray);
+// console.log("The lowest Number",lowest);
+
+
+
+
+// Reverse a string 
+function lovelySentence(love) {
+    for(var i = love.length-1; i>=0; i--){
+        let element =love[i];
+        console.log(element, i);
+    }
 }
-const minimumNumber = minNumber(7,5,1);
-console.log(minimumNumber);
+const saidMyWife = "I Love u my world";
+const happiestMoment = lovelySentence(saidMyWife);
+console.log(happiestMoment);
+
+
+
+
+// Reverse words in a sentence
+// function string(sentence) {
+//     const joinSentence = [];
+//     const splitWord = sentence.split(" ");
+//     for(var i = splitWord.length-1; i>=0; i--){
+//         const element = splitWord[i]
+//         joinSentence.push(element);
+        // console.log(joinSentence);
+//     }
+//     const reversed = joinSentence.join(" ");
+//     return reversed;
+// }
+// const str = "I love Allah and My Prophet";
+// const outputStr = string(str);
+// console.log(outputStr);
 
 
 
