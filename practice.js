@@ -433,15 +433,15 @@
 
 
 // Reverse a string 
-function lovelySentence(love) {
-    for(var i = love.length-1; i>=0; i--){
-        let element =love[i];
-        console.log(element, i);
-    }
-}
-const saidMyWife = "I Love u my world";
-const happiestMoment = lovelySentence(saidMyWife);
-console.log(happiestMoment);
+// function lovelySentence(love) {
+//     for(var i = love.length-1; i>=0; i--){
+//         let element =love[i];
+//         console.log(element, i);
+//     }
+// }
+// const saidMyWife = "I Love u my world";
+// const happiestMoment = lovelySentence(saidMyWife);
+// console.log(happiestMoment);
 
 
 
@@ -453,7 +453,7 @@ console.log(happiestMoment);
 //     for(var i = splitWord.length-1; i>=0; i--){
 //         const element = splitWord[i]
 //         joinSentence.push(element);
-        // console.log(joinSentence);
+// console.log(joinSentence);
 //     }
 //     const reversed = joinSentence.join(" ");
 //     return reversed;
@@ -461,6 +461,16 @@ console.log(happiestMoment);
 // const str = "I love Allah and My Prophet";
 // const outputStr = string(str);
 // console.log(outputStr);
+
+
+
+
+// Create a Fibonacci Series using a for loop
+const fibo = [0, 1];
+for (var i = 2; i <= 12; i++) {
+    fibo[i] = fibo[i - 1] + fibo[i - 2];
+}
+console.log(fibo);
 
 
 
