@@ -528,20 +528,41 @@
 
 // Write foo, bar, foobar if divisible by 3 or 5 or both
 
-for (var i = 0; i <= 50; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-        console.log("foobar");
-    }
-    else if (i % 5 === 0) {
-        console.log("bar");
-    }
-    else if (i % 3 === 0) {
-        console.log("foo");
-    }
-    else {
-        console.log(i);
-    }
+// for (var i = 0; i <= 50; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//         console.log("foobar");
+//     }
+//     else if (i % 5 === 0) {
+//         console.log("bar");
+//     }
+//     else if (i % 3 === 0) {
+//         console.log("foo");
+//     }
+//     else {
+//         console.log(i);
+//     }
+// }
+
+
+
+
+// Use add and multiplication to calculate wood requirements
+function makeCalculateForWeeding(biriyani, softDrinks, cigarate){
+    const priceOfBiriyani = 350;
+    const priceOfSoftDrinks = 12;
+    const priceOfCigarate = 14;
+
+    const totalCostOfBriyani = priceOfBiriyani * biriyani;
+    const totalCostOfSoftDrinks = priceOfSoftDrinks * softDrinks;
+    const totalCostOfCigarates = priceOfCigarate * cigarate;
+
+    const totalCost = totalCostOfBriyani + totalCostOfSoftDrinks + totalCostOfCigarates;
+    return totalCost;
 }
+
+const total = makeCalculateForWeeding(50, 50, 20);
+console.log(total);
+
 
 
 
