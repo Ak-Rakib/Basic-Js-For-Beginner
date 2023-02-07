@@ -333,6 +333,7 @@
 
 
 
+
 // split, slice, substr, substring, concat, join
 
 // const songLyrics = "Tumi akasher buke, sorolotar protima. Tumi amr bukete bishalotar upoma"
@@ -379,6 +380,7 @@
 
 
 // Swap variable, swap without temp, destructing
+
 // let a = 7;
 // let b = 8;
 // // const tem = a;
@@ -393,6 +395,7 @@
 
 
 // Write a function that will take 3 numbers will return the max number
+
 // function maxNumber() {
 //     const maximum = Math.max(9,17,6);
 //     return maximum;
@@ -403,6 +406,7 @@
 
 
 // Write a function that will take 3 parameters and will return the min number
+
 // function minNumber(a,b,c) {
 //     const minimumNum = Math.min(a,b,c);
 //     return minimumNum;
@@ -414,6 +418,7 @@
 
 
 // Write a function to get the lowest number in an array
+
 // function lowestNumber(number) {
 //     lowest = number[0];
 //     for(var i=0; i < number.length; i++){
@@ -433,6 +438,7 @@
 
 
 // Reverse a string 
+
 // function lovelySentence(love) {
 //     for(var i = love.length-1; i>=0; i--){
 //         let element =love[i];
@@ -447,6 +453,7 @@
 
 
 // Reverse words in a sentence
+
 // function string(sentence) {
 //     const joinSentence = [];
 //     const splitWord = sentence.split(" ");
@@ -466,11 +473,56 @@
 
 
 // Create a Fibonacci Series using a for loop
-const fibo = [0, 1];
-for (var i = 2; i <= 12; i++) {
-    fibo[i] = fibo[i - 1] + fibo[i - 2];
+
+// const fibo = [0, 1];
+// for (var i = 2; i <= 12; i++) {
+//     fibo[i] = fibo[i - 1] + fibo[i - 2];
+// }
+// console.log(fibo);
+
+
+
+
+// Quiz problem
+
+// const mathRound = Math.round(Math.random()*10);
+// console.log(mathRound);
+
+// function add(a, b){
+//     return a + b;
+//   }
+//   console.log(add("adam" + "eve"))
+
+
+
+
+// Get part of an array and insert elements using splice
+
+// const number = [23,34,45,56,67,12,89];
+// const applySplice = number.splice(2,6);
+// console.log(applySplice); 
+// console.log(number);
+
+
+
+// Remove duplicate items from an array
+function removeDuplicateItems(numbers) {
+    uniqueItems = [];
+    for (var i = 0; i < numbers.length; i++) {
+        const element = numbers[i];
+        if (uniqueItems.includes(element) === false) {
+            uniqueItems.push(element);
+        }
+    }
+    return uniqueItems;
+
 }
-console.log(fibo);
+const number = [23, 34, 45, 56, 67, 12, 89, 89, 12, 67, -98, -34, -56, -34];
+const duplicateArrayRemove = removeDuplicateItems(number);
+console.log(duplicateArrayRemove);
+
+
+
 
 
 
