@@ -505,21 +505,43 @@
 
 
 
-// Remove duplicate items from an array
-function removeDuplicateItems(numbers) {
-    uniqueItems = [];
-    for (var i = 0; i < numbers.length; i++) {
-        const element = numbers[i];
-        if (uniqueItems.includes(element) === false) {
-            uniqueItems.push(element);
-        }
-    }
-    return uniqueItems;
 
+// Remove duplicate items from an array
+
+// function removeDuplicateItems(numbers) {
+//     uniqueItems = [];
+//     for (var i = 0; i < numbers.length; i++) {
+//         const element = numbers[i];
+//         if (uniqueItems.includes(element) === false) {
+//             uniqueItems.push(element);
+//         }
+//     }
+//     return uniqueItems;
+
+// }
+// const number = [23, 34, 45, 56, 67, 12, 89, 89, 12, 67, -98, -34, -56, -34];
+// const duplicateArrayRemove = removeDuplicateItems(number);
+// console.log(duplicateArrayRemove);
+
+
+
+
+// Write foo, bar, foobar if divisible by 3 or 5 or both
+
+for (var i = 0; i <= 50; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("foobar");
+    }
+    else if (i % 5 === 0) {
+        console.log("bar");
+    }
+    else if (i % 3 === 0) {
+        console.log("foo");
+    }
+    else {
+        console.log(i);
+    }
 }
-const number = [23, 34, 45, 56, 67, 12, 89, 89, 12, 67, -98, -34, -56, -34];
-const duplicateArrayRemove = removeDuplicateItems(number);
-console.log(duplicateArrayRemove);
 
 
 
